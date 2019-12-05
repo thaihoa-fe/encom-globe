@@ -1,7 +1,7 @@
 {
-  "name": "encom-globe",
+  "name": "encom-globe-fixed",
   "version": "0.5.4",
-  "description": "encom-globe",
+  "description": "Forked from encom-globe but support background",
   "main": "src/Globe.js",
   "devDependencies": {
     "minimist": "0.0.8",
