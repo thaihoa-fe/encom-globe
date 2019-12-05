@@ -286,6 +286,7 @@ function Globe(width, height, opts){
         markerColor: "#ffcc00",
         pinColor: "#00eeee",
         satelliteColor: "#ff0000",
+        backgroundColor: '#000000',
         blankPercentage: 0,
         thinAntarctica: .01, // only show 1% of antartica... you can't really see it on the map anyhow
         mapUrl: "resources/equirectangle_projection.png",
@@ -345,6 +346,7 @@ Globe.prototype.init = function(cb){
 
     // create the scene
     this.scene = new THREE.Scene();
+    this.scene.background = new THREE.Color(this.backgroundColor);
 
     this.scene.fog = new THREE.Fog( 0x000000, this.cameraDistance, this.cameraDistance+300 );
 
